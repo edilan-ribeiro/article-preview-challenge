@@ -33,46 +33,45 @@ body {
 .main-component .info-side {
   padding: 30px 46px;
   letter-spacing: 1px;
-
   position: relative;
 }
 
-.main-component .info h2 {
+.main-component .info-side .info h2 {
   font-weight: 700;
   font-size: 2.5rem;
   margin-bottom: 15px;
   color: hsl(217, 19%, 35%);
 }
 
-.main-component .info p {
+.main-component .info-side .info p {
   color: hsl(212, 23%, 69%);
   text-align: justify;
   margin-bottom: 30px;
 }
 
-.info-side .bottom {
+.main-component .info-side .bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.info-side .bottom .autor {
+.main-component .info-side .bottom .autor {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
-.info-side .bottom .autor img {
+.main-component .info-side .bottom .autor img {
   border-radius: 50%;
   width: 50px;
 }
 
-.info-side .bottom .autor .name-date span {
+.main-component .info-side .bottom .autor .name-date span {
   font-weight: 700;
   color: hsl(217, 19%, 35%);
 }
 
-.info-side .bottom .share-btn {
+.main-component .info-side .bottom .share-btn {
   border-radius: 50%;
   background-color: hsl(210, 46%, 95%);
   width: 40px;
@@ -83,7 +82,7 @@ body {
   cursor: pointer;
 }
 
-.info-side .share {
+.main-component .info-side .share {
   position: absolute;
   top: 45%;
   right: -10%;
@@ -99,9 +98,10 @@ body {
   color: #fff;
   gap: 15px;
   z-index: 2;
+  opacity: 0;
 }
 
-.info-side .share::before {
+.main-component .info-side .share::before {
   content: "";
   position: absolute;
   border-left: 30px solid transparent;
@@ -112,7 +112,7 @@ body {
   right: 37%;
 }
 
-.info-side .share .share-text {
+.main-component .info-side .share .share-text {
   color: hsl(212, 23%, 69%);
   font-size: 1.2rem;
 }
