@@ -16,23 +16,25 @@ body {
 
 .main-component {
   width: 850px;
-  height: 300px;
+  height: 330px;
   display: flex;
   border-radius: 10px;
-  overflow: hidden;
   color: hsl(214, 17%, 51%);
   box-shadow: 5px 5px 30px hsl(214, 17%, 51%);
+  background-color: #fff;
 }
 
 .main-component .image-side img {
-  height: 300px;
+  height: 100%;
   width: 300px;
+  border-radius: 10px 0 0 10px;
 }
 
 .main-component .info-side {
   padding: 30px 46px;
   letter-spacing: 1px;
-  background-color: #fff;
+
+  position: relative;
 }
 
 .main-component .info h2 {
@@ -45,39 +47,72 @@ body {
 .main-component .info p {
   color: hsl(212, 23%, 69%);
   text-align: justify;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .info-side .bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .info-side .bottom .autor {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .info-side .bottom .autor img {
-    border-radius: 50%;
-    width: 50px;
+  border-radius: 50%;
+  width: 50px;
 }
 
-.info-side .bottom .autor .name-date span{
-    font-weight: 700;
-    color: hsl(217, 19%, 35%);
+.info-side .bottom .autor .name-date span {
+  font-weight: 700;
+  color: hsl(217, 19%, 35%);
 }
-
 
 .info-side .bottom .share-btn {
-    border-radius: 50%;
-    background-color: hsl(210, 46%, 95%);
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+  border-radius: 50%;
+  background-color: hsl(210, 46%, 95%);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.info-side .share {
+  position: absolute;
+  top: 45%;
+  right: -10%;
+  background-color: hsl(217, 19%, 35%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 55px;
+  border-radius: 10px;
+  font-size: 2.5rem;
+  letter-spacing: 4px;
+  color: #fff;
+  gap: 15px;
+  z-index: 2;
+}
+
+.info-side .share::before {
+  content: "";
+  position: absolute;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 30px solid hsl(217, 19%, 35%);
+  z-index: -1;
+  bottom: -25%;
+  right: 37%;
+}
+
+.info-side .share .share-text {
+  color: hsl(212, 23%, 69%);
+  font-size: 1.2rem;
 }
