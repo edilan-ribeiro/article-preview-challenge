@@ -84,11 +84,14 @@
     justify-content: flex-start;
     padding: 30px;
     border-radius: 0 0 10px 10px;
-    opacity: 0;
   }
 
   .main-component .info-side .share::before {
     display: none;
+  }
+
+  .main-component .info-side .share .share-text {
+    font-size: 1.5rem;
   }
 
   .main-component .info-side .bottom .share-btn {
@@ -96,7 +99,8 @@
     width: 30px;
     height: 30px;
   }
-  .main-component .info-side .share .share-text {
-    font-size: 1.5rem;
+
+  .main-component .info-side .bottom .share-btn-active {
+    background-color: hsl(220, 16%, 56%);
   }
 }

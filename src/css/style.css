@@ -80,6 +80,15 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  color: hsl(217, 19%, 35%);
+  transition: 0.3s ease-in-out;
+}
+
+/* BUTTON ACTIVE */
+.main-component .info-side .bottom .share-btn-active {
+  background-color: hsl(217, 19%, 35%);
+  color: #fff;
+  transition: 0.3s ease-in-out;
 }
 
 .main-component .info-side .share {
@@ -98,7 +107,7 @@ body {
   color: #fff;
   gap: 15px;
   z-index: 2;
-  opacity: 0;
+  box-shadow: 2px 2px 5px hsl(217, 19%, 35%);
 }
 
 .main-component .info-side .share::before {
@@ -115,4 +124,23 @@ body {
 .main-component .info-side .share .share-text {
   color: hsl(212, 23%, 69%);
   font-size: 1.2rem;
+}
+
+.main-component .info-side ul li a:hover {
+  color: hsl(217, 21%, 58%);
+  transition: 0.3s ease-in-out;
+}
+
+/* SOCIALS MENU SHOW/HIDE */
+
+.appear {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.4s ease-in-out;
+}
+
+.hide {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
 }
